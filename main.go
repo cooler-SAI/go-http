@@ -1,7 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	fmt.Println("Hello go-http")
+	for {
+		time.Sleep(time.Hour)
+	}
 }
