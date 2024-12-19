@@ -10,6 +10,7 @@ import (
 )
 
 func main() {
+	zerolo
 	fmt.Println("Hello go-http")
 	fmt.Println(time.Now())
 
