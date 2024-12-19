@@ -69,5 +69,11 @@ func main() {
 		}
 	}()
 
-	tools.WaitForShutdown(server)
+	go func() {
+		tools.WaitForShutdown(server)
+		log.Info().Msg("Server is shutting down")
+		os.Exit(0)
+	}()
+
+	select {}
 }
